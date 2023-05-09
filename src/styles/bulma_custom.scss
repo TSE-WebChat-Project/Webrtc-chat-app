@@ -1,0 +1,44 @@
+@import "../../node_modules/bulma/sass/utilities/functions.sass";
+@import "../../node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// $purple: #7002ee;
+$white: #fbfbfb;
+// $black: #090302;
+// $black-bis: #1f1a19;
+// $black-ter: #332f2e;
+
+// $rose-red: #b7245c;
+// $rose-red-invert: findColorInvert($rose-red);
+// $pink: #ff8cc6;
+// $pink-invert: findColorInvert($pink);
+
+$primary: #583485;
+
+$info: #4c4357;
+$success: #76f8e2;
+$warning: #653b43;
+$danger: #93000a;
+
+$light: #e7e1e5;
+$dark: #1d1b1e;
+
+$text: $white;
+$text-strong: $white;
+
+@import "../../node_modules/bulma/sass/utilities/derived-variables.sass";
+
+$scheme-main: $dark;
+$background: $info;
+
+$message-header-background-color: $info-dark;
+// $scheme-main-bis: $dark-bis;
+// $scheme-main-ter: $dark-ter;
+
+
+// $addColors: (
+//     "rose-red": ($rose-red, $rose-red-invert),
+//     "pink": ($pink, $pink-invert)
+// );
+// $colors: map-merge($map1: $colors, $map2: $addColors);
+
+@import "../../node_modules/bulma/bulma.sass";
