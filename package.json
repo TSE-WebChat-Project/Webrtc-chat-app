@@ -4,17 +4,19 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.16",
     "typescript": "^5.0.2",
     "vite": "^4.3.2"
   },
   "dependencies": {
     "bulma": "^0.9.4",
     "firebase": "^9.21.0",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "vite-plugin-mkcert": "^1.15.0"
   }
 }
