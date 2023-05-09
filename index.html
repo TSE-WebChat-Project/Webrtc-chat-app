@@ -21,9 +21,29 @@
       <div class="hero-body has-text-centered">
         <p class="title">Study together</p>
         <p class="subtitle">A University of Lincoln project</p>
-        <a class="button is-primary is-large" href="/chat.html">
-          Get started
-        </a>
+        <div>
+          <div class="field has-addons is-justify-content-center">
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Room code"
+                id="code-input"
+                style="border-color: black"
+              />
+            </div>
+            <div class="control">
+              <a class="button is-primary" id="join-btn"> Join </a>
+            </div>
+          </div>
+        </div>
+        <h4 class="is-size-4">--------------------</h4>
+        <div class="field has-addons is-justify-content-center mt-2">
+          <div class="control">
+            <a class="button is-primary" id="create-btn"> Create meeting </a>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <script type="module" src="/src/main.ts"></script>

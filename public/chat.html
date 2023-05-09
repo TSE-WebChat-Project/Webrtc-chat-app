@@ -14,11 +14,21 @@
         </div>
       </div>
       <div class="navbar-end">
-        <div class="navbar-item"></div>
+        <div class="navbar-item">
+          <h4 class="is-size-4" id="room-code">Room code:</h4>
+        </div>
+      </div>
+    </div>
+    <div class="navbar is-black">
+      <div class="navbar-item">
+        <button id="disconnect-btn" class="button is-danger">Disconnect</button>
+      </div>
+      <div class="navbar-item">
+        <button id="mute-btn" class="button is-grey">Mute</button>
       </div>
     </div>
     <div id="video-section">
-      <video id="localstream" autoplay playsinline></video>
+      <video id="localstream" autoplay playsinline muted></video>
     </div>
     <script type="module" src="/src/main.ts"></script>
     <script type="module" src="/src/WebRTC.ts"></script>

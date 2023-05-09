@@ -62,9 +62,18 @@ async function start() {
     return;
   }
   const roomID = urlParams.get("room") ?? "";
+  $("#room-code").text("Room code: " + roomID);
 
   try {
     localStream = await openMediaDevices({ video: true, audio: true });
+    $("#mute-btn").click(() => {
+      localStream.getAudioTracks()[0].enabled =
+        !localStream.getAudioTracks()[0].enabled;
+
+      $("#mute-btn").text(
+        localStream.getAudioTracks()[0].enabled ? "Mute" : "Unmute"
+      );
+    });
   } catch (error) {
     alert(
       "Error: Could not open media device! Please check device and refresh."
@@ -276,5 +285,7 @@ function setupSnapshots(
     }
   });
 }
+
+$("#disconnect-btn").click(() => (window.location.href = "/"));
 
 start();
